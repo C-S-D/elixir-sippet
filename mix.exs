@@ -1,7 +1,7 @@
 defmodule Sippet.Mixfile do
   use Mix.Project
 
-  @version "1.0.16"
+  @version "1.0.16-patch-1"
 
   def project do
     [

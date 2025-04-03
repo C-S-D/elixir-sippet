@@ -1305,7 +1305,7 @@ defmodule Sippet.Message do
     )
   end
 
-  defp do_parse_header_value({display_name, uri, %{} = parameters}) do
+  defp do_parse_header_value({display_name, uri, %{} = parameters})  when uri != "" do
     case URI.parse(uri) do
       {:ok, uri} ->
         {display_name, uri, parameters}
